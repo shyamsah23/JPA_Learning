@@ -11,13 +11,5 @@ import java.util.List;
 @SpringBootTest
 public class PatientTest {
 
-    @Autowired
-    private PatientRepository patientRepository;
 
-    @Test
-    public void testPatientRepository() {
-        List<Patient> listOfPatient =  patientRepository.findAll();
-        System.out.println(listOfPatient);
-
-    }
 }
