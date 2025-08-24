@@ -16,6 +16,7 @@ public class AuthService {
     @Autowired
     private AuthUtil authUtil;
 
+    @Autowired
     private AuthenticationManager authenticationManager;
 
     public LoginResponseDto login(LoginRequestDto loginRequestDto) {
