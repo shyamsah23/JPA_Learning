@@ -3,6 +3,8 @@ package com.Learner.hospitalManagement.controller;
 
 import com.Learner.hospitalManagement.dto.LoginRequestDto;
 import com.Learner.hospitalManagement.dto.LoginResponseDto;
+import com.Learner.hospitalManagement.dto.SignupRequestDto;
+import com.Learner.hospitalManagement.dto.SignupResponseDto;
 import com.Learner.hospitalManagement.entity.User;
 import com.Learner.hospitalManagement.security.AuthService;
 import org.apache.coyote.Response;
@@ -21,5 +23,10 @@ public class AuthController {
     public ResponseEntity<LoginResponseDto> login(@RequestBody LoginRequestDto loginRequestDto) {
 
         return ResponseEntity.ok(authService.login(loginRequestDto));
+    }
+
+    @PostMapping("signup")
+    public ResponseEntity<SignupResponseDto> signup(@RequestBody SignupRequestDto signupRequestDto){
+        return ResponseEntity.ok(authService.signup(signupRequestDto));
     }
 }
