@@ -19,6 +19,7 @@ public class WebSecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/dummy").permitAll()
                         .requestMatchers("/auth/login").permitAll()
+                        .requestMatchers("/auth/signup").permitAll()
                         .anyRequest().authenticated()   // allow others only if logged in
                 )
                 .formLogin(form -> form.disable())
