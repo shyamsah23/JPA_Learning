@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.Learner</groupId>
 	<artifactId>hospitalManagement</artifactId>
-	<version>0.0.4-SNAPSHOT</version>
+	<version>0.0.5-SNAPSHOT</version>
 	<name>hospitalManagement</name>
 	<description>Project to Learn JPA</description>
 	<url/>
