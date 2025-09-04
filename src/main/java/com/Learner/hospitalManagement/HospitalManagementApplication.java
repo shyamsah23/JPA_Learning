@@ -10,10 +10,7 @@ public class HospitalManagementApplication {
 	public static void main(String[] args) {
 
 		SpringApplication.run(HospitalManagementApplication.class, args);
-		BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
-		String rawPassword = "Anant";
-		String hashed = encoder.encode(rawPassword);
-		System.out.println("Hashed password: " + hashed);
+
 	}
 
 }
