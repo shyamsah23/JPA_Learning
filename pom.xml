@@ -28,6 +28,11 @@
 	</scm>
 	<properties>
 		<java.version>17</java.version>
+		<graphql.version>5.0.2</graphql.version>
+		<spring-cloud-starter-openfeign.version>4.2.0</spring-cloud-starter-openfeign.version>
+		<resilience4j-spring-boot3.version>2.2.0</resilience4j-spring-boot3.version>
+		<spring-boot-starter-aop.version>3.5.3</spring-boot-starter-aop.version>
+		<spring-boot-starter-quartz.version>3.5.3</spring-boot-starter-quartz.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -42,7 +47,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-quartz</artifactId>
-			<version>3.5.3</version>
+			<version>${spring-boot-starter-quartz.version}</version>
 		</dependency>
 
 		<dependency>
@@ -95,7 +100,25 @@
 		<dependency>
 			<groupId>com.graphql-java</groupId>
 			<artifactId>graphql-spring-boot-starter</artifactId>
-			<version>5.0.2</version>
+			<version>${graphql.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-openfeign -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
+			<version>${spring-cloud-starter-openfeign.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.github.resilience4j/resilience4j-spring-boot3 -->
+		<dependency>
+			<groupId>io.github.resilience4j</groupId>
+			<artifactId>resilience4j-spring-boot3</artifactId>
+			<version>${resilience4j-spring-boot3.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-aop -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+			<version>${spring-boot-starter-aop.version}</version>
 		</dependency>
 	</dependencies>
 
